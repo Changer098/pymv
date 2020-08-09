@@ -1,6 +1,6 @@
 from pymv.ffcommand import ffcommand
 
-class output(ffcommand):
+class Output(ffcommand):
     output_file = None
 
     def __init__(self):

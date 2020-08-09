@@ -1,6 +1,6 @@
-from pymv.chapterresult import ChapterResult
-from pymv.streamresult import StreamResult
-from pymv.format import Format
+from pymv.probe.chapterresult import ChapterResult
+from pymv.probe.streamresult import StreamResult
+from pymv.probe.format import Format
 
 class ProbeResult:
     raw_json = None     # The orginal json object to create the object

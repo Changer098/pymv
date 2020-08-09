@@ -1,6 +1,6 @@
 from pymv.ffcommand import ffcommand
 
-class input(ffcommand):
+class Input(ffcommand):
     input_files = None
 
     def __init__(self):

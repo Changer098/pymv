@@ -1,4 +1,4 @@
-from pymv.tags import Tags
+from pymv.probe.tags import Tags
 
 class ChapterResult:
     raw_chapter_obj = None

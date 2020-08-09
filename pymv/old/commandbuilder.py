@@ -1,16 +1,29 @@
-from pymv.input import Input
-from pymv.output import Output
-from pymv.video import Video
+from pymv.fmap import fmap
+from pymv.codecinfo import codecinfo
+from pymv.bitrateinfo import bitrateinfo
+from pymv.metadatainfo import metadatainfo
 
 class commandbuilder:
-    inputobj = None
-    outputobj = None
-    videoobj = None
+    inputs = None
+    outputs = None
+    mapping = None
+    codec_info = None
+    bitrate_info = None
+    metadata_info = None
+    input_info = None
+    video_info = None
+    audio_info = None
+    subtitle_info = None
+    videooptions = None
+    otheroptions = None
 
     def __init__(self):
-        self.inputobj = Input()
-        self.outputobj = Output()
-        self.videoobj = Video()
+        self.inputs = []
+        self.outputs = []
+        self.codec_info = codecinfo()
+        self.bitrate_info = bitrateinfo()
+        self.metadata_info = metadatainfo()
+        self.otheroptions = list()
 
     def get_ffmpeg(self):
         return "ffmpeg"
@@ -19,7 +32,6 @@ class commandbuilder:
         return "ffprobe"
 
     def get_arguments(self):
-        return
         arguments = []
         # assemble inputs
         if self.inputs is not None:

@@ -1,7 +1,7 @@
 from pymv.ffcommand import ffcommand
 from pymv.codec import codec
 
-class video(ffcommand):
+class Video(ffcommand):
     codec_obj = None
 
     def __init__(self):

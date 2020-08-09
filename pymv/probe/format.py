@@ -1,4 +1,4 @@
-from pymv.tags import Tags
+from pymv.probe.tags import Tags
 import datetime
 import math
 
